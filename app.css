@@ -1,41 +1,124 @@
-.cart-table td, .cart-table th {
-    padding: 15px;
-    border-bottom: 1px solid #c2d3de;
+body {
+    margin: 0;
 }
 
-table {
-    border-collapse: collapse
+div {
+    box-sizing: border-box;
 }
 
-.cart-background {
-    width: 100%;
-    background-color: #c2d3de;
-    padding: 30px;
+h1 {
+    font-size: 30px;
 }
-.cart-table {
-    width: 100%;
-    max-width: 700px;
+
+h4 {
+    font-size: 22px;
+}
+.main-background {
+    background-image: linear-gradient(to bottom, #499add, #4e61c0);
+    height: 550px;
+    padding: 20px;
+    color: white;
+}
+.main-container {
+    max-width: 1200px;
     margin: auto;
-    background: white;
-    border-radius: 10px;
 }
-.cart-table th:nth-child(2) {
-    width: 200px;
+.main-text {
+  float: left;
+  margin-top: 50px;
 }
-.cart-table th:nth-child(3) {
-    width: 200px;
+.main-iphone {
+    width: 400px;
+    float: right;
+    margin-top: 95px;
 }
 .btn {
-    padding: 10px;
-    font-size: 15px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
     border: none;
-    border-radius: 10px;
-    background-color: gray;
-    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    margin: 20px auto;
-    display: block;
 }
-.btn:hover {
-    background-color: chocolate;
+.btn-black {
+    background: #444;
+    color: white;
+}
+.service {
+    background-color: #4e61c0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 60px 30px 50px 30px;
+}
+
+.service-items {
+    display: flex;
+}
+
+.service-items div {
+    width: 25%;
+}
+.service h5 {
+    margin-bottom: 0px;
+}
+
+.service-icon {
+    background: white;
+    color: #4e61c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.service {
+    background-color: #4e61c0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 60px 30px 50px 30px;
+}
+
+.service-items {
+    display: flex;
+}
+
+.service-items div {
+    width: 25%;
+}
+
+.service-icon {
+    background: white;
+    color: #4e61c0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+@media screen and (max-width : 992px) {
+    .main-iphone {
+        height: 300px;
+        width: 300px;
+        display: block;
+        float: none;
+        margin: auto;
+        margin-top: 35px;
+    }
+    .main-text {
+        float: none;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+@media screen and (max-width : 992px) {
+    .service-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-items div {
+        width: 100%;
+    }
 }
